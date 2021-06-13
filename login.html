@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="/Content/LoginAssets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+   
+    <nav class="navbar navbar-inverse bg-color">
+        <div class="container-fluid mr-lg-5 ml-lg-5 mr-md-3 ml-md-3 pr-xl-5">
+            <div class="navbar-header">
+                <a class="navbar-brand pt-0 pb-0" href="#"><img src="image/logo.png" alt="logo" /></a>
+            </div>
+
+            <div style="max-width:93%; display:inline;">
+                <ul class="nav navbar-nav navbar-right text-white">
+                    <li class="pr-md-4 pr-2 mob-desk" style="width:100%;"><span><a href="#" id="instituteLogin" style="color:white;text-decoration:none;"></a><b>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE</b></span></li>
+                    <li class="pr-md-4 pr-2 mob-desk" style="width:100%;"><span><a href="#" id="instituteLogin" style="color:white;text-decoration:none;">Belawadi, Srirangapatna Taluk, Mandya 571477</a></span></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Main Contain -->
+    <div class="main-contain">
+        <div class="container-fluid">
+            <div class="col-12">
+                <div id="TopHeaderDisplay" class="top-note text-center mr-lg-5 ml-lg-5 mr-md-3 ml-md-3 pr-xl-5">
+                    
+                    <marquee attribute_name="attribute_value" ....more attributes>
+                        <p class="mb-0">Have Fun! with QuiZz</p>
+                    </marquee>
+                </div>
+            </div>
+            <div class="contain-data pt-2">
+                <div class="row">
+                    <div class="col-md-7 pl-0">
+                        <div class="heading-admin" id="clgNameCtn">
+                            
+                            <div id="titleheading">
+                                <h2 class="mb-3" id="onlineHeading"><span>LOGIN</span></h2>
+                                <h4 class="mb-3"><span id="regHeading">Take QuiZz!!!</span></h4>
+                            </div>
+                            
+                            <h6 class="text-white">Now its Time to PERFORM........</h6>
+                        </div>
+                        <!-- Notice for desktop view -->
+                        <div class="notice desktop-pad">
+                            <div style="width:90%;">
+                                
+                            </div>
+
+                        </div>
+                        <!-- Notice for desktop view END -->
+                    </div>
+
+
+
+                    <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-5 pb-5">
+                        <div class="login" id="divLogin">
+                            <!-- Tabs -->
+                            <ul class="nav nav-pills mb-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" id="studentpill" href="#student">Student</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" id="institutepill" href="#institution">Institution</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="student">
+                                    <form action="" class="form-horizontal" method="post" role="form">
+                                        <input name="__RequestVerificationToken" type="hidden" value="RffB65NVOWxmS6BNmns2jXmFbl1HCtBL9loOQ6s7r1QIj43PDFVrpXWUcSB3Trh-PZEXBUnXqO07t-DcmUwMoRu8k-gnMEWw-BdxW4u9DUM1" />       
+                                         <div class="form-group">
+                                            
+                                            <input class="form-control" data-val="true" data-val-required="The Email field is required." id="Email" name="Email" placeholder="Username*" type="text" value="" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group" id="show_hide_password">
+                                                <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password*" type="password" />
+                                                <i class="fa fa-eye-slash field-icon" aria-hidden="true" style="color:#AEB8C5"></i>
+                                            </div>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-4">
+                                            
+                                            <div class="forget-pass">
+                                                <a id="forgotPassord" href="#">Forgot password?</a>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="mt-md-4">
+                                            <button type="submit" class="btn btn-login" id="btnStudLogin">LOGIN</button>
+                                           <a href="reg.html"><button type="button" class="btn btn-signup" id="btnLinkRegister" >REGISTER</button></a> 
+                                        </div>
+
+                                    </form>          
+                              </div>
+                                <div class="tab-pane fade" id="institution">
+                                        <form action="/Registration/AdminLogin" class="form-horizontal" method="post" role="form">
+                                            <input name="__RequestVerificationToken" type="hidden" value="XtP9fzsg5hk4BZ78jpdnUNcLAp4PaRsLfsUWxY9TfuEveolALBOIk2jEHAeQ-mMYOcROHPuj6EC6HBO_Mr3jwivilJqfaibmALgr9-dK5io1" />             
+                                         <div class="form-group">
+
+                                            <input class="form-control" data-val="true" data-val-required="The Email field is required." id="EmailAdmin" name="EmailAdmin" placeholder="Username*" type="text" value="" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="EmailAdmin" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="input-group" id="show_hide_password_admin">
+                                                <input class="form-control" data-val="true" data-val-required="The Password field is required." id="PasswordAdmin" name="PasswordAdmin" placeholder="Password*" type="password" />
+                                                <i class="fa fa-eye-slash field-icon" aria-hidden="true" style="color:#AEB8C5"></i>
+                                            </div>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="PasswordAdmin" data-valmsg-replace="true"></span>
+                                        </div>
+                                        
+                                        <div class="mt-md-5">
+                                            <button type="submit" class="btn btn-login" id="btnAdminLogin">COLLEGE LOGIN</button>
+                                        </div>
+</form>                                </div>
+                            </div>
+                        </div>
+                        <div class="register" id="divRegister" style="display:none;">
+                            
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="student">
+                                    <div class="form-group">
+                                        <input type="text" id="registrationUserName" class="form-control" maxlength="16" placeholder="UserName*">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="registrationPassword" class="form-control" maxlength="16" placeholder="Password*">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="registrationConfirmPassword" maxlength="16" placeholder="Confirm Password*">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mobile" id="registrationMobileNumber" maxlength="10" placeholder="Mobile Number*" onkeypress="return isNumber(event)" />
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="registrationEmail" placeholder="Email Id">
+                                    </div>
+                                    <div class="mt-md-5">
+                                        <button type="button" class="btn btn-signup" id="btnLinkLogin">GO TO LOGIN</button>
+                                            <button type="button" id="btnRegister" class="btn btn-login">REGISTER</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="register" id="divForgotPassword" style="display:none">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="student">
+                                    <div class="form-group">
+                                        <input type="text" id="forgotPasswordUserName" class="form-control" placeholder="Enter Registered Mobile No.*" maxlength="10" onkeypress="return isNumber(event)" />
+                                    </div>
+                                    <div class="mt-md-5">
+                                        <button type="button" class="btn btn-signup" id="btnLinkLogin2">BACK</button>
+                                        <button type="button" id="btnGetPassword" class="btn btn-login">GET CREDENTIAL</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="hdnMessage" />
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Customize Theme Script-->
+    
+
+</body>
+</html>
